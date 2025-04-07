@@ -28,7 +28,284 @@
 			<string>\b(?i:end try)\b</string>
 			<key>name</key>
 			<string>keyword.control.end_catch</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:local)\b</string>
+			<key>name</key>
+			<string>keyword.control.local</string>
 		</dict>		
+		<dict>
+			<key>match</key>
+			<string>\b(?i:exposed)\b</string>
+			<key>name</key>
+			<string>keyword.control.exposed</string>
+		</dict>		
+		<dict>
+			<key>match</key>
+			<string>\b(?i:function)\b</string>
+			<key>name</key>
+			<string>keyword.control.function</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:return)\b</string>
+			<key>name</key>
+			<string>keyword.control.return</string>
+		</dict>		
+		<dict>
+			<key>match</key>
+			<string>\b(?i:break)\b</string>
+			<key>name</key>
+			<string>keyword.control.break</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:continue)\b</string>
+			<key>name</key>
+			<string>keyword.control.continue</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:use)\b</string>
+			<key>name</key>
+			<string>keyword.control.use</string>
+		</dict>		
+		<dict>
+			<key>match</key>
+			<string>\b(?i:utiliser)\b</string>
+			<key>name</key>
+			<string>keyword.control.utiliser</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:end use)\b</string>
+			<key>name</key>
+			<string>keyword.control.end_use</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:fin utiliser)\b</string>
+			<key>name</key>
+			<string>keyword.control.fin_utiliser</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:begin sql)\b</string>
+			<key>name</key>
+			<string>keyword.control.begin_sql</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:debut sql)\b</string>
+			<key>name</key>
+			<string>keyword.control.debut_sql</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:end sql)\b</string>
+			<key>name</key>
+			<string>keyword.control.end_sql</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:fin sql)\b</string>
+			<key>name</key>
+			<string>keyword.control.fin_sql</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:case of)\b</string>
+			<key>name</key>
+			<string>keyword.control.case_of</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:au cas ou)\b</string>
+			<key>name</key>
+			<string>keyword.control.au_cas_ou</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:end case)\b</string>
+			<key>name</key>
+			<string>keyword.control.end_case</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:fin de cas)\b</string>
+			<key>name</key>
+			<string>keyword.control.fin_de_cas</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:if)\b</string>
+			<key>name</key>
+			<string>keyword.control.if</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:si)\b</string>
+			<key>name</key>
+			<string>keyword.control.si</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:else)\b</string>
+			<key>name</key>
+			<string>keyword.control.else</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:sinon)\b</string>
+			<key>name</key>
+			<string>keyword.control.sinon</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:end if)\b</string>
+			<key>name</key>
+			<string>keyword.control.end_if</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:fin de si)\b</string>
+			<key>name</key>
+			<string>keyword.control.fin_de_si</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:for)\b</string>
+			<key>name</key>
+			<string>keyword.control.for</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:boucle)\b</string>
+			<key>name</key>
+			<string>keyword.control.boucle</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:end for)\b</string>
+			<key>name</key>
+			<string>keyword.control.end_for</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:fin de boucle)\b</string>
+			<key>name</key>
+			<string>keyword.control.fin_de_boucle</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:repeat)\b</string>
+			<key>name</key>
+			<string>keyword.control.repeat</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:repeter)\b</string>
+			<key>name</key>
+			<string>keyword.control.repeter</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:until)\b</string>
+			<key>name</key>
+			<string>keyword.control.until</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:jusque)\b</string>
+			<key>name</key>
+			<string>keyword.control.jusque</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:while)\b</string>
+			<key>name</key>
+			<string>keyword.control.while</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:tant que)\b</string>
+			<key>name</key>
+			<string>keyword.control.tant_que</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:end while)\b</string>
+			<key>name</key>
+			<string>keyword.control.end_while</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:fin tant que)\b</string>
+			<key>name</key>
+			<string>keyword.control.fin_tant_que</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:for each)\b</string>
+			<key>name</key>
+			<string>keyword.control.for_each</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:pour chaque)\b</string>
+			<key>name</key>
+			<string>keyword.control.pour_chaque</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:end for each)\b</string>
+			<key>name</key>
+			<string>keyword.control.end_for_each</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:fin de chaque)\b</string>
+			<key>name</key>
+			<string>keyword.control.fin_de_chaque</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:class constructor)\b</string>
+			<key>name</key>
+			<string>keyword.control.class_constructor</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:class extends)\b</string>
+			<key>name</key>
+			<string>keyword.control.class_extends</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:property)\b</string>
+			<key>name</key>
+			<string>keyword.control.property</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:alias)\b</string>
+			<key>name</key>
+			<string>keyword.control.alias</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:var)\b</string>
+			<key>name</key>
+			<string>keyword.control.var</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:#declare)\b</string>
+			<key>name</key>
+			<string>keyword.control.declare</string>
+		</dict>
+		
 	</array>
 	<key>scopeName</key>
 	<string>source.4dm</string>
