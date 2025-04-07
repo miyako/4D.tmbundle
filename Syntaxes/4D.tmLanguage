@@ -181,12 +181,6 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:end for)\b</string>
-			<key>name</key>
-			<string>keyword.control.end_for</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>\b(?i:fin de boucle)\b</string>
 			<key>name</key>
 			<string>keyword.control.fin_de_boucle</string>
@@ -241,12 +235,6 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:for each)\b</string>
-			<key>name</key>
-			<string>keyword.control.for_each</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>\b(?i:pour chaque)\b</string>
 			<key>name</key>
 			<string>keyword.control.pour_chaque</string>
@@ -256,6 +244,18 @@
 			<string>\b(?i:end for each)\b</string>
 			<key>name</key>
 			<string>keyword.control.end_for_each</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:end for)\b</string>
+			<key>name</key>
+			<string>keyword.control.end_for</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:for each)\b</string>
+			<key>name</key>
+			<string>keyword.control.for_each</string>
 		</dict>
 		<dict>
 			<key>match</key>
