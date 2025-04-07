@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>4D</string>
+	<key>fileTypes</key>
+	<array>
+		<string>4dm</string>
+		<string>4qs</string>
+	</array>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:try)\b</string>
+			<key>name</key>
+			<string>keyword.control.try</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:catch)\b</string>
+			<key>name</key>
+			<string>keyword.control.catch</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:end try)\b</string>
+			<key>name</key>
+			<string>keyword.control.end_catch</string>
+		</dict>		
+	</array>
+	<key>scopeName</key>
+	<string>source.4dm</string>
+	<key>uuid</key>
+	<string>3CE9544E-E2CC-46DE-A20F-6026C7E75E48</string>
+</dict>
+</plist>

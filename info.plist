@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>xrvfhxr.zvlnxb@4Q.pbz</string>
+	<key>contactName</key>
+	<string>Keisuke Miyako</string>
+	<key>description</key>
+	<string>Syntax highlight for 4D.</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array/>
+	</dict>
+	<key>name</key>
+	<string>4D</string>
+	<key>source</key>
+	<dict/>
+	<key>uuid</key>
+	<string>3CE9544E-E2CC-46DE-A20F-6026C7E75E48</string>
+</dict>
+</plist>
