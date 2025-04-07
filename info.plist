@@ -16,7 +16,12 @@
 	<key>name</key>
 	<string>4D</string>
 	<key>source</key>
-	<dict/>
+	<dict>
+		<key>url</key>
+		<string>git@github.com:miyako/4D.tmbundle</string>
+		<key>method</key>
+		<string>git</string>
+	</dict>
 	<key>uuid</key>
 	<string>3CE9544E-E2CC-46DE-A20F-6026C7E75E48</string>
 </dict>
