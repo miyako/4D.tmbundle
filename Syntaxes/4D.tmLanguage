@@ -163,12 +163,6 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:end if)\b</string>
-			<key>name</key>
-			<string>keyword.control.end_if</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>\b(?i:fin de si)\b</string>
 			<key>name</key>
 			<string>keyword.control.fin_de_si</string>
@@ -262,6 +256,12 @@
 			<string>\b(?i:end for each)\b</string>
 			<key>name</key>
 			<string>keyword.control.end_for_each</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:end if)\b</string>
+			<key>name</key>
+			<string>keyword.control.end_if</string>
 		</dict>
 		<dict>
 			<key>match</key>
