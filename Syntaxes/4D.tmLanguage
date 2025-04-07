@@ -247,7 +247,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:end for)\b</string>
+			<string>\b(?i:end for[^ eE])\b</string>
 			<key>name</key>
 			<string>keyword.control.end_for</string>
 		</dict>
