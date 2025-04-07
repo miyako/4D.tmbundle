@@ -169,12 +169,6 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:for)\b</string>
-			<key>name</key>
-			<string>keyword.control.for</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>\b(?i:boucle)\b</string>
 			<key>name</key>
 			<string>keyword.control.boucle</string>
@@ -256,6 +250,12 @@
 			<string>\b(?i:for each)\b</string>
 			<key>name</key>
 			<string>keyword.control.for_each</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:for)\b</string>
+			<key>name</key>
+			<string>keyword.control.for</string>
 		</dict>
 		<dict>
 			<key>match</key>
