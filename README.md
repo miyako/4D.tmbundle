@@ -4,49 +4,49 @@ A TextMate bundle for 4D.
 ### keywords
 
 - [x] try, catch, end try
-- [ ] local
-- [ ] exposed
-- [ ] function
-- [ ] return
-- [ ] break
-- [ ] continue
-- [ ] use
-- [ ] utiliser
-- [ ] end use
-- [ ] fin utiliser
-- [ ] begin sql
-- [ ] debut sql
-- [ ] end sql
-- [ ] fin sql
-- [ ] case of
-- [ ] au cas ou
-- [ ] end case
-- [ ] fin de cas
-- [ ] if
-- [ ] si
-- [ ] else
-- [ ] sinon
-- [ ] end if
-- [ ] fin de si
-- [ ] for
-- [ ] boucle
-- [ ] end for
-- [ ] fin de boucle
-- [ ] repeat
-- [ ] repeter
-- [ ] until
-- [ ] jusque
-- [ ] while
-- [ ] tant que
-- [ ] end while
-- [ ] fin tant que
-- [ ] for each
-- [ ] pour chaque
-- [ ] end for each
-- [ ] fin de chaque
-- [ ] class constructor
-- [ ] class extends
-- [ ] property
-- [ ] alias
-- [ ] var
+- [x] local
+- [x] exposed
+- [x] function
+- [x] return
+- [x] break
+- [x] continue
+- [x] use
+- [x] utiliser
+- [x] end use
+- [x] fin utiliser
+- [x] begin sql
+- [x] debut sql
+- [x] end sql
+- [x] fin sql
+- [x] case of
+- [x] au cas ou
+- [x] end case
+- [x] fin de cas
+- [x] if
+- [x] si
+- [x] else
+- [x] sinon
+- [x] end if
+- [x] fin de si
+- [x] for
+- [x] boucle
+- [x] end for
+- [x] fin de boucle
+- [x] repeat
+- [x] repeter
+- [x] until
+- [x] jusque
+- [x] while
+- [x] tant que
+- [x] end while
+- [x] fin tant que
+- [x] for each
+- [x] pour chaque
+- [x] end for each
+- [x] fin de chaque
+- [x] class constructor
+- [x] class extends
+- [x] property
+- [x] alias
+- [x] var
 - [ ] #declare
