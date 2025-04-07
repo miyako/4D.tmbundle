@@ -1,2 +1,52 @@
 # 4D.tmbundle
 A TextMate bundle for 4D.
+
+### keywords
+
+- [x] try, catch, end try
+- [ ] local
+- [ ] exposed
+- [ ] function
+- [ ] return
+- [ ] break
+- [ ] continue
+- [ ] use
+- [ ] utiliser
+- [ ] end use
+- [ ] fin utiliser
+- [ ] begin sql
+- [ ] debut sql
+- [ ] end sql
+- [ ] fin sql
+- [ ] case of
+- [ ] au cas ou
+- [ ] end case
+- [ ] fin de cas
+- [ ] if
+- [ ] si
+- [ ] else
+- [ ] sinon
+- [ ] end if
+- [ ] fin de si
+- [ ] for
+- [ ] boucle
+- [ ] end for
+- [ ] fin de boucle
+- [ ] repeat
+- [ ] repeter
+- [ ] until
+- [ ] jusque
+- [ ] while
+- [ ] tant que
+- [ ] end while
+- [ ] fin tant que
+- [ ] for each
+- [ ] pour chaque
+- [ ] end for each
+- [ ] fin de chaque
+- [ ] class constructor
+- [ ] class extends
+- [ ] property
+- [ ] alias
+- [ ] var
+- [ ] #declare
