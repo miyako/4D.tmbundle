@@ -42,3 +42,5 @@ the following are not assigned any scopes
 * parentheses `()` `{}` `[]` `[[]]` 
 * object literal
 * collection literal
+
+not using `beginCaptures` for token sequences; simply markup tokens without context
