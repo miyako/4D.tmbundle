@@ -347,6 +347,12 @@
 			<key>name</key>
 			<string>constant.numeric.exp</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=["])((\\["ntr\\])|[^"])*(?=["])</string>
+			<key>name</key>
+			<string>constant.string</string>
+		</dict>
 		
 		
 	</array>
