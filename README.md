@@ -14,13 +14,19 @@ A TextMate bundle for 4D.
 |`constant.numeric.hexadecimal.4d`||
 |`constant.other.time.4d`||
 |`constant.other.date.4d`||
+|`constant.language.4d`||
 |`support.variable.system.4d`|[System Variables](https://developer.4d.com/docs/Concepts/variables#system-variables)|
 |`string.quoted.double.4d`||
 |`variable.parameter.numeric.4d`||
 |`variable.local.4d`||
 |`variable.interprocess.4d`||
-
-
+|`entity.classic.function.4d`||
+|`entity.classic.function.deprecated.4d`||
+|`entity.classic.type.4d`||
+|`entity.orda.function.4d`||
+|`keyword.control.4d`|`try` `catch` `end try` `return` `break` `continue` `case of` `au cas ou` `end case` `fin de cas` `if` `si` `else` `sinon` `fin de si` `boucle` `fin de boucle` `repeat` `repeter` `until` `jusque` `while` `tant que` `end while` `fin tant que` `pour chaque` `end for each` `end for` `for each` `for` `end if` `fin de chaque`|
+|`keyword.other.4d`|`class constructor` `class extends` `alias` `use` `utiliser` `#DECLARE`|
+|`storage.type.4d`|`var` `property`|
 
 
 ## TODO
