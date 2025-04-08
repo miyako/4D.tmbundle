@@ -10,8 +10,8 @@ A TextMate bundle for 4D.
 |`constant.numeric.decimal.4d`|[number literals](https://developer.4d.com/docs/18/Concepts/number#number-literals) - decimal point is period or comma|
 |`constant.numeric.exponential.4d`|[number literals](https://developer.4d.com/docs/18/Concepts/number#number-literals) - scientific notation|
 |`constant.numeric.hexadecimal.4d`|[number literals](https://developer.4d.com/docs/18/Concepts/number#number-literals) - hexadecimal integer|
-|`constant.other.time.4d`||
-|`constant.other.date.4d`||
+|`constant.other.time.4d`|[time literals](https://developer.4d.com/docs/Concepts/time#time-literals)|
+|`constant.other.date.4d`|[date literals](https://developer.4d.com/docs/Concepts/date#date-literals)|
 |`constant.language.4d`||
 |`string.quoted.double.4d`||
 |`variable.parameter.numeric.4d`||
