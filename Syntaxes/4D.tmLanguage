@@ -113,87 +113,6 @@
 			<string>constant.language.4d</string>
 		</dict>	
 		
-		<!-- supports -->
-		
-		<dict>
-			<key>match</key>
-			<string>\b(?i:error method)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>		
-		<dict>
-			<key>match</key>
-			<string>\b(?i:error line)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>			
-		<dict>
-			<key>match</key>
-			<string>\b(?i:error formula)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>\b(?i:error)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>			
-		<dict>
-			<key>match</key>
-			<string>\b(?i:mousedown)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>\b(?i:mouseproc)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>			
-		<dict>
-			<key>match</key>
-			<string>\b(?i:mouse[xy])\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>\b(?i:keycode)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>\b(?i:modifiers)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>		
-		<dict>
-			<key>match</key>
-			<string>\b(?i:flddelimit)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>					
-		<dict>
-			<key>match</key>
-			<string>\b(?i:recdelimit)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>\b(?i:ok)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>		
-		<dict>
-			<key>match</key>
-			<string>\b(?i:document)\b</string>
-			<key>name</key>
-			<string>support.variable.system.4d</string>
-		</dict>		
-
 		<!-- strings -->
 		
 		<dict>
@@ -537,16 +456,12 @@
 			<key>name</key>
 			<string>storage.type.4d</string>
 		</dict>
-		
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)(?i)(#DECLARE)\b</string>
 			<key>name</key>
 			<string>keyword.other.4d</string>
-		</dict>	
-		
-		<!-- one word keyword that can be part of a command should listed at the bottom -->
-		
+		</dict>			
 		<dict>
 			<key>match</key>
 			<string>\b(?i:use)\b</string>
@@ -559,6 +474,84 @@
 			<key>name</key>
 			<string>keyword.other.4d</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:error method)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>		
+		<dict>
+			<key>match</key>
+			<string>\b(?i:error line)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>			
+		<dict>
+			<key>match</key>
+			<string>\b(?i:error formula)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:error)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>			
+		<dict>
+			<key>match</key>
+			<string>\b(?i:mousedown)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:mouseproc)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>			
+		<dict>
+			<key>match</key>
+			<string>\b(?i:mouse[xy])\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:keycode)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:modifiers)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>		
+		<dict>
+			<key>match</key>
+			<string>\b(?i:flddelimit)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>					
+		<dict>
+			<key>match</key>
+			<string>\b(?i:recdelimit)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:ok)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>		
+		<dict>
+			<key>match</key>
+			<string>\b(?i:document)\b</string>
+			<key>name</key>
+			<string>support.variable.system.4d</string>
+		</dict>	
 	</array>
 	<key>scopeName</key>
 	<string>source.4dm</string>
