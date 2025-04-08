@@ -4,7 +4,7 @@ A TextMate bundle for 4D.
 |scope&nbsp|Description|
 |-|-|
 |`source.4dm`|code|
-|`comment.block.4d`||
+|`comment.block.4d`|folds|
 |`comment.line.double-slash.4d`||
 |`constant.numeric.4d`||
 |`constant.numeric.decimal.4d`||
@@ -32,7 +32,3 @@ A TextMate bundle for 4D.
 |`keyword.other.declare.4d`||
 |`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~\|` `&&` `&` `\|\|` `\|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%`|
 |`storage.type.4d`|`var` `property`|
-
-## TODO
-
-- [ ] blocks
