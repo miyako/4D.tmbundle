@@ -6,10 +6,10 @@ A TextMate bundle for 4D.
 |`source.4dm`|code|
 |`comment.block.4d`|[inline or multiline comments](https://developer.4d.com/docs/Concepts/quick-tour#inline-or-multiline-comments-comment) - folds|
 |`comment.line.double-slash.4d`|[single line comments](https://developer.4d.com/docs/Concepts/quick-tour#single-line-comments-comment)|
-|`constant.numeric.4d`||
-|`constant.numeric.decimal.4d`||
-|`constant.numeric.exponential.4d`||
-|`constant.numeric.hexadecimal.4d`||
+|`constant.numeric.4d`|[number literals](https://developer.4d.com/docs/18/Concepts/number#number-literals) - decimal integer|
+|`constant.numeric.decimal.4d`|[number literals](https://developer.4d.com/docs/18/Concepts/number#number-literals) - decimal point is period or comma|
+|`constant.numeric.exponential.4d`|[number literals](https://developer.4d.com/docs/18/Concepts/number#number-literals) - scientific notation|
+|`constant.numeric.hexadecimal.4d`|[number literals](https://developer.4d.com/docs/18/Concepts/number#number-literals) - hexadecimal integer|
 |`constant.other.time.4d`||
 |`constant.other.date.4d`||
 |`constant.language.4d`||
