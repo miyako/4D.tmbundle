@@ -12,6 +12,14 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>name</key>
+			<string>keyword.operator</string>
+			<key>match</key>
+			<string>\+=|\-=|\*=|\/=|\~\||&&|&|\|\|||\||&lt;&lt;|&gt;&gt;|&lt;=|&gt;=|&lt;|&gt;|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|^</string>
+		</dict>		
+		
+		
+		<dict>
 		  <key>name</key>
 		  <string>comment.block</string>
 		  <key>begin</key>
@@ -127,11 +135,6 @@
 			<key>name</key>
 			<string>variable.command.classic</string>
 		</dict>	
-
-		
-		
-		
-		
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)_[oO]_([cC]_)?([\p{Letter} ])+([\p{Letter}])(:C[0-9]+)\b</string>
