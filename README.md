@@ -14,9 +14,8 @@ A TextMate bundle for 4D.
 |`constant.numeric.hexadecimal.4d`||
 |`constant.other.time.4d`||
 |`constant.other.date.4d`||
-|`constant.character.4d`||
-|`constant.language.system-variable.4d`|[System Variables](https://developer.4d.com/docs/Concepts/variables#system-variables)|
-
+|`support.variable.system.4d`|[System Variables](https://developer.4d.com/docs/Concepts/variables#system-variables)|
+|`string.quoted.double.4d`||
 
 
 
