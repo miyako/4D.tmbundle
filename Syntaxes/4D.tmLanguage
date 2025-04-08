@@ -13,6 +13,188 @@
 	<array>
 		<dict>
 			<key>match</key>
+			<string>(?&lt;!\w|\$)[?][0-9]{2}:[0-9]{2}:[0-9]{2}[?]\b</string>
+			<key>name</key>
+			<string>constant.time</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)[!][0-9]{2,4}-[0-9]{2}-[0-9]{2}[!]\b</string>
+			<key>name</key>
+			<string>constant.date.yyyymmdd</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)[!][0-9]{2}-[0-9]{2}-[0-9]{2,4}[!]\b</string>
+			<key>name</key>
+			<string>constant.date.ddmmyyyy</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)0[xX][0-9a-fA-F]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.hex</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)[0-9]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.dec</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)[0-9]+[.,][0-9]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.num</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)[0-9]+[.,][0-9]+[eE]-?[0-9]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.exp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=["])((\\["ntr\\])|[^"])*(?=["])</string>
+			<key>name</key>
+			<string>constant.string</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)[$][0-9]+\b</string>
+			<key>name</key>
+			<string>entity.parameter.numeric</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)[$]([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
+			<key>name</key>
+			<string>entity.variable.local</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)&lt;&gt;([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
+			<key>name</key>
+			<string>entity.variable.interprocess</string>
+		</dict>				
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)([\p{Letter}_])([\p{Letter} ])+([\p{Letter}])(:C[0-9]+)\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Get 4D folder(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Dossier 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Load 4D View document(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Charger document 4D View(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Get 4D file(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Fichier 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)RESTART 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)REDEMARRER 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)QUIT 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)QUITTER 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)POP3 New transporter(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)BASE64 ENCODE(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)ENCODER BASE64(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>				
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)BASE64 DECODE(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)DECODER BASE64(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)PROCESS 4D TAGS(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)TRAITER BALISES 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)_[oO]_([\p{Letter} ])+([\p{Letter}])(:C[0-9]+)\b</string>
+			<key>name</key>
+			<string>variable.command.classic.obsolete</string>
+		</dict>					
+		
+		
+		<dict>
+			<key>match</key>
 			<string>\b(?i:try)\b</string>
 			<key>name</key>
 			<string>keyword.control.try</string>
@@ -64,18 +246,6 @@
 			<string>\b(?i:continue)\b</string>
 			<key>name</key>
 			<string>keyword.control.continue</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>\b(?i:use)\b</string>
-			<key>name</key>
-			<string>keyword.control.use</string>
-		</dict>		
-		<dict>
-			<key>match</key>
-			<string>\b(?i:utiliser)\b</string>
-			<key>name</key>
-			<string>keyword.control.utiliser</string>
 		</dict>	
 		<dict>
 			<key>match</key>
@@ -304,144 +474,18 @@
 			<string>(?&lt;!\w|\$)(?i)(#DECLARE)\b</string>
 			<key>name</key>
 			<string>keyword.control.declare</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)[?][0-9]{2}:[0-9]{2}:[0-9]{2}[?]\b</string>
-			<key>name</key>
-			<string>constant.time</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)[!][0-9]{2,4}-[0-9]{2}-[0-9]{2}[!]\b</string>
-			<key>name</key>
-			<string>constant.date.yyyymmdd</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)[!][0-9]{2}-[0-9]{2}-[0-9]{2,4}[!]\b</string>
-			<key>name</key>
-			<string>constant.date.ddmmyyyy</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)0[xX][0-9a-fA-F]+\b</string>
-			<key>name</key>
-			<string>constant.numeric.hex</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)[0-9]+\b</string>
-			<key>name</key>
-			<string>constant.numeric.dec</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)[0-9]+[.,][0-9]+\b</string>
-			<key>name</key>
-			<string>constant.numeric.num</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)[0-9]+[.,][0-9]+[eE]-?[0-9]+\b</string>
-			<key>name</key>
-			<string>constant.numeric.exp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;=["])((\\["ntr\\])|[^"])*(?=["])</string>
-			<key>name</key>
-			<string>constant.string</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)[$][0-9]+\b</string>
-			<key>name</key>
-			<string>entity.parameter.numeric</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)[$]([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
-			<key>name</key>
-			<string>entity.variable.local</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)&lt;&gt;([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
+			<string>\b(?i:use)\b</string>
 			<key>name</key>
-			<string>entity.variable.interprocess</string>
-		</dict>				
+			<string>keyword.control.use</string>
+		</dict>		
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)([\p{Letter}_])([\p{Letter} ])+([\p{Letter}])(:C[0-9]+)\b</string>
+			<string>\b(?i:utiliser)\b</string>
 			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)Get 4D folder(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)Dossier 4D(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)Load 4D View document(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)Charger document 4D View(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)Get 4D file(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)Fichier 4D(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)RESTART 4D(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)REDEMARRER 4D(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)QUIT 4D(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)QUITTER 4D(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)POP3 New transporter(:C[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.command.classic</string>
+			<string>keyword.control.utiliser</string>
 		</dict>			
 	</array>
 	<key>scopeName</key>
