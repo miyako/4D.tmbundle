@@ -357,21 +357,86 @@
 			<key>match</key>
 			<string>(?&lt;!\w|\$)[$][0-9]+\b</string>
 			<key>name</key>
-			<string>variable.parameter.numeric</string>
+			<string>entity.parameter.numeric</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)[$]([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
 			<key>name</key>
-			<string>variable.local</string>
+			<string>entity.variable.local</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)&lt;&gt;([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
 			<key>name</key>
-			<string>variable.interprocess</string>
+			<string>entity.variable.interprocess</string>
 		</dict>				
-		
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)([\p{Letter}_])([\p{Letter} ])+([\p{Letter}])(:C[0-9]+)\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Get 4D folder(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Dossier 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Load 4D View document(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Charger document 4D View(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Get 4D file(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)Fichier 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)RESTART 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)REDEMARRER 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)QUIT 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)QUITTER 4D(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
+		</dict>			
 	</array>
 	<key>scopeName</key>
 	<string>source.4dm</string>
