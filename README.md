@@ -5,6 +5,8 @@ A TextMate bundle for 4D.
 
 ## TODO
 
+- [ ] function
+- [ ] data type
 - [ ] blocks
 
 ### operators
