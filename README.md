@@ -10,6 +10,8 @@ A TextMate bundle for 4D.
 - [ ] data type
 - [ ] syatem variables
 - [ ] blocks
+- [ ] object literal
+- [ ] collection literal
 
 ### operators
 
