@@ -29,6 +29,6 @@ A TextMate bundle for 4D.
 |`keyword.other.4d`|`class constructor` `class extends` `use` `end use` `utiliser` `fin utiliser` `begin sql` `debut sql` `end sql` `fin sql`|
 |`keyword.other.function.4d`|[function](https://developer.4d.com/docs/Concepts/classes#function)|
 |`keyword.other.alias.4d`|[alias attributes](https://developer.4d.com/docs/ORDA/ordaClasses#alias-attributes-1)|
-|`keyword.other.declare.4d`||
+|`keyword.other.declare.4d`|[declaring parameters](https://developer.4d.com/docs/Concepts/parameters#declaring-parameters)|
 |`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~\|` `&&` `&` `\|\|` `\|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%`|
 |`storage.type.4d`|`var` `property`|
