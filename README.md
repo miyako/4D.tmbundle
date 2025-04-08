@@ -26,14 +26,14 @@ A TextMate bundle for 4D.
 |`support.variable.classic.4d`|[System Variables](https://developer.4d.com/docs/Concepts/variables#system-variables)|
 |`support.variable.orda.4d`|object property|
 |`support.type.classic.4d`|classic language with `C_` prefix|
+|`support.type.orda.4d`||
 |`keyword.control.4d`|`try` `catch` `end try` `return` `break` `continue` `case of` `au cas ou` `end case` `fin de cas` `if` `si` `else` `sinon` `end if` `fin de si` `boucle` `fin de boucle` `repeat` `repeter` `until` `jusque` `while` `tant que` `end while` `fin tant que` `pour chaque` `for each` `end for each` `for` `end for` `fin de chaque`|
 |`keyword.other.4d`|`class constructor` `class extends` `use` `end use` `utiliser` `fin utiliser` `begin sql` `debut sql` `end sql` `fin sql`|
 |`keyword.other.function.4d`||
 |`keyword.other.alias.4d`||
 |`keyword.other.declare.4d`||
-|`storage.type.4d`|`var` `property`|
-|`storage.type.orda.4d`||
 |`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~\|` `&&` `&` `\|\|` `\|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%`|
+|`storage.type.4d`|`var` `property`|
 
 ## TODO
 
