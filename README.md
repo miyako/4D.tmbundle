@@ -3,12 +3,12 @@ A TextMate bundle for 4D.
 
 ### constants
 
-- [ ] hex
-- [ ] integer
-- [ ] numeric
-- [ ] exponent
-- [ ] date
-- [ ] time
+- [x] hex
+- [x] integer
+- [x] numeric
+- [x] exponent
+- [x] date
+- [x] time
 - [ ] string
 - [ ] \\r
 - [ ] \\n
