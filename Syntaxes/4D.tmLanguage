@@ -131,7 +131,7 @@
 		</dict>				
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])+([\p{Letter}])(:C[0-9]+)\b</string>
+			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])?([\p{Letter}])(:C[0-9]+)\b</string>
 			<key>name</key>
 			<string>variable.command.classic.4d</string>
 		</dict>	
@@ -149,7 +149,7 @@
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(?i)(super|this|form|null|4d|ds|cs)\b</string>
+			<string>(?&lt;!\.)\b(?i)(super|this|form|null|4d|ds|cs)(:C[0-9]+)?\b</string>
 			<key>name</key>
 			<string>variable.language.special.4d</string>
 		</dict>	
