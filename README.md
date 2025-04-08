@@ -32,14 +32,11 @@ A TextMate bundle for 4D.
 |`keyword.other.alias.4d`||
 |`keyword.other.declare.4d`||
 |`storage.type.4d`|`var` `property`|
+|`storage.type.orda.4d`||
 |`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~\|` `&&` `&` `\|\|` `\|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%`|
 
 ## TODO
 
-- [ ] data type
 - [ ] blocks
 - [ ] object literal
 - [ ] collection literal
-
-
-
