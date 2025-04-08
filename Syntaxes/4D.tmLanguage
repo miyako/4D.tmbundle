@@ -131,31 +131,31 @@
 		</dict>				
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])?([\p{Letter}])(:C[0-9]+)\b</string>
+			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])*([\p{Letter}])(?=(:C[0-9]+))\b</string>
 			<key>name</key>
 			<string>variable.command.classic.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)_[oO]_([cC]_)?([\p{Letter} ])+([\p{Letter}])(:C[0-9]+)\b</string>
+			<string>(?&lt;!\w|\$)_[oO]_([cC]_)?([\p{Letter} ])+([\p{Letter}])(?=(:C[0-9]+))\b</string>
 			<key>name</key>
 			<string>variable.command.classic.obsolete.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)([cC]_)([\p{Letter}])+(:C[0-9]+)\b</string>
+			<string>(?&lt;!\w|\$)([cC]_)([\p{Letter}])+(?=(:C[0-9]+))\b</string>
 			<key>name</key>
 			<string>variable.command.classic.declaration.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(?i)(super|this|form|null|4d|ds|cs)(:C[0-9]+)?\b</string>
+			<string>(?&lt;!\.)\b(?i)(super|this|form|null|4d|ds|cs)(?=(:C[0-9]+)?)\b</string>
 			<key>name</key>
 			<string>variable.language.special.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])+([\p{Letter}])(:K[0-9]+:[0-9]+)\b</string>
+			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])+([\p{Letter}])(?=(:K[0-9]+:[0-9]+))\b</string>
 			<key>name</key>
 			<string>constant.classic.4d</string>
 		</dict>			
