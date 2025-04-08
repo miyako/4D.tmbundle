@@ -1,6 +1,13 @@
 # 4D.tmbundle
 A TextMate bundle for 4D.
 
+### tokens
+
+- [x] parameter
+- [ ] local variable
+- [ ] classic command
+- [ ] classic constant
+
 ### constants
 
 - [x] hex
@@ -9,12 +16,12 @@ A TextMate bundle for 4D.
 - [x] exponent
 - [x] date
 - [x] time
-- [ ] string
-- [ ] \\r
-- [ ] \\n
-- [ ] \\t
-- [ ] \\"
-- [ ] \\\\
+- [x] string
+- [x] \\r
+- [x] \\n
+- [x] \\t
+- [x] \\"
+- [x] \\\\
 
 ### keywords
 
