@@ -359,7 +359,12 @@
 			<key>name</key>
 			<string>variable.parameter.numeric</string>
 		</dict>
-		
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)[$]([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
+			<key>name</key>
+			<string>variable.local</string>
+		</dict>		
 		
 	</array>
 	<key>scopeName</key>
