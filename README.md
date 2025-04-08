@@ -27,7 +27,10 @@ A TextMate bundle for 4D.
 |`support.variable.orda.4d`|object property|
 |`support.type.classic.4d`|classic language with `C_` prefix|
 |`keyword.control.4d`|`try` `catch` `end try` `return` `break` `continue` `case of` `au cas ou` `end case` `fin de cas` `if` `si` `else` `sinon` `end if` `fin de si` `boucle` `fin de boucle` `repeat` `repeter` `until` `jusque` `while` `tant que` `end while` `fin tant que` `pour chaque` `for each` `end for each` `for` `end for` `fin de chaque`|
-|`keyword.other.4d`|`class constructor` `class extends` `alias` `local` `exposed` `function` `use` `end use` `utiliser` `fin utiliser` `#DECLARE` `begin sql` `debut sql` `end sql` `fin sql`|
+|`keyword.other.4d`|`class constructor` `class extends` `use` `end use` `utiliser` `fin utiliser` `begin sql` `debut sql` `end sql` `fin sql`|
+|`keyword.other.function.4d`||
+|`keyword.other.alias.4d`||
+|`keyword.other.declare.4d`||
 |`storage.type.4d`|`var` `property`|
 |`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~\|` `&&` `&` `\|\|` `\|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%`|
 
