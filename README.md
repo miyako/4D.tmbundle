@@ -55,7 +55,6 @@ A TextMate bundle for 4D.
 - [x] 4D
 - [x] This
 - [x] Form
-- [x] Self
 - [x] Null
 
 ### tokens
