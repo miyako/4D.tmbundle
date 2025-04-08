@@ -8,23 +8,7 @@ A TextMate bundle for 4D.
 
 ### commands
 
-- [x] Get 4D folder
-- [x] Dossier 4D
-- [x] Load 4D View document
-- [x] Charger document 4D View
-- [x] Get 4D file
-- [x] Fichier 4D
-- [x] RESTART 4D
-- [x] REDEMARRER 4D
-- [x] QUIT 4D
-- [x] QUITTER 4D
-- [x] POP3 New transporter
-- [x] BASE64 ENCODE
-- [x] ENCODER BASE64
-- [x] BASE64 DECODE
-- [x] DECODER BASE64
-- [x] PROCESS 4D TAGS
-- [x] TRAITER BALISES 4D
+- [x] classic command
 - [x] \_O\_
 - [x] C\_
 - [x] ds
@@ -40,11 +24,10 @@ A TextMate bundle for 4D.
 - [x] parameter
 - [x] local variable
 - [x] interprocess variable
-- [x] classic command
-- [ ] classic constant
 
 ### constants
 
+- [x] classic constant
 - [x] hex
 - [x] integer
 - [x] numeric
