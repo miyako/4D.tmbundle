@@ -15,7 +15,7 @@ A TextMate bundle for 4D.
 |`constant.other.time.4d`||
 |`constant.other.date.4d`||
 |`constant.character.4d`||
-|`constant.language.system-variable.4d`|OK, Document, Error, Error method, Error line, Error formula, FldDelimit, RecDelimit, MouseDown, MouseX, MouseY, KeyCode, Modifiers, MouseProc, MouseX, MouseY|
+|`constant.language.system-variable.4d`|[System Variables](https://developer.4d.com/docs/Concepts/variables#system-variables)|
 
 
 
