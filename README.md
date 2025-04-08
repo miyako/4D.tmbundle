@@ -20,9 +20,11 @@ A TextMate bundle for 4D.
 |`variable.parameter.numeric.4d`||
 |`variable.local.4d`||
 |`variable.interprocess.4d`||
-|`entity.classic.function.4d`||
-|`entity.classic.function.deprecated.4d`||
-|`entity.classic.type.4d`||
+|`support.function.classic.4d`|classic language|
+|`support.function.classic.deprecated.4d`|classic language with `_O_` prefix|
+|`support.type.classic.4d`|classic language with `C_` prefix|
+|`support.function.orda.4d`|object member function|
+|`support.variable.orda.4d`|object property|
 |`entity.orda.function.4d`|`ds` `cs` `4D` `this` `form` `null` `super`|
 |`keyword.control.4d`|`try` `catch` `end try` `return` `break` `continue` `case of` `au cas ou` `end case` `fin de cas` `if` `si` `else` `sinon` `end if` `fin de si` `boucle` `fin de boucle` `repeat` `repeter` `until` `jusque` `while` `tant que` `end while` `fin tant que` `pour chaque` `for each` `end for each` `for` `end for` `fin de chaque`|
 |`keyword.other.4d`|`class constructor` `class extends` `alias` `local` `exposed` `function` `use` `end use` `utiliser` `fin utiliser` `#DECLARE` `begin sql` `debut sql` `end sql` `fin sql`|
