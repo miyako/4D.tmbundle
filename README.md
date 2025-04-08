@@ -15,17 +15,17 @@ A TextMate bundle for 4D.
 |`constant.other.time.4d`||
 |`constant.other.date.4d`||
 |`constant.language.4d`||
-|`support.variable.system.4d`|[System Variables](https://developer.4d.com/docs/Concepts/variables#system-variables)|
 |`string.quoted.double.4d`||
 |`variable.parameter.numeric.4d`||
-|`variable.local.4d`||
-|`variable.interprocess.4d`||
+|`variable.language.orda.4d`|`ds` `cs` `4D` `this` `form` `null` `super`|
+|`variable.other.local.4d`||
+|`variable.other.interprocess.4d`||
 |`support.function.classic.4d`|classic language|
 |`support.function.classic.deprecated.4d`|classic language with `_O_` prefix|
-|`support.type.classic.4d`|classic language with `C_` prefix|
 |`support.function.orda.4d`|object member function|
+|`support.variable.classic.4d`|[System Variables](https://developer.4d.com/docs/Concepts/variables#system-variables)|
 |`support.variable.orda.4d`|object property|
-|`entity.orda.function.4d`|`ds` `cs` `4D` `this` `form` `null` `super`|
+|`support.type.classic.4d`|classic language with `C_` prefix|
 |`keyword.control.4d`|`try` `catch` `end try` `return` `break` `continue` `case of` `au cas ou` `end case` `fin de cas` `if` `si` `else` `sinon` `end if` `fin de si` `boucle` `fin de boucle` `repeat` `repeter` `until` `jusque` `while` `tant que` `end while` `fin tant que` `pour chaque` `for each` `end for each` `for` `end for` `fin de chaque`|
 |`keyword.other.4d`|`class constructor` `class extends` `alias` `local` `exposed` `function` `use` `end use` `utiliser` `fin utiliser` `#DECLARE` `begin sql` `debut sql` `end sql` `fin sql`|
 |`storage.type.4d`|`var` `property`|
