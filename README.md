@@ -5,6 +5,7 @@ A TextMate bundle for 4D.
 
 - [x] parameter
 - [x] local variable
+- [ ] interprocess variable
 - [ ] classic command
 - [ ] classic constant
 
