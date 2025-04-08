@@ -3,6 +3,9 @@ A TextMate bundle for 4D.
 
 ### comments
 
+- [x] block
+- [x] line
+
 ### commands
 
 - [x] Get 4D folder
