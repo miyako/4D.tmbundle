@@ -3,7 +3,7 @@ A TextMate bundle for 4D.
 
 ### tokens
 
-- [ ] parameter
+- [x] parameter
 - [ ] local variable
 - [ ] classic command
 - [ ] classic constant
