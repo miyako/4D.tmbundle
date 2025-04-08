@@ -238,6 +238,12 @@
 			<key>name</key>
 			<string>variable.command.classic.obsolete</string>
 		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)([cC]_)([\p{Letter}])+(:C[0-9]+)\b</string>
+			<key>name</key>
+			<string>variable.command.classic.declaration</string>
+		</dict>	
 		
 		
 		<dict>
