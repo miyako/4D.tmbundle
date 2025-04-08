@@ -108,439 +108,458 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=["])((\\["ntr\\])|[^"])*(?=["])</string>
+			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])+([\p{Letter}])(?=(:K[0-9]+:[0-9]+))\b</string>
 			<key>name</key>
-			<string>constant.character.4d</string>
-		</dict>
+			<string>constant.language.4d</string>
+		</dict>	
+		
+		<!-- supports -->
+		
 		<dict>
 			<key>match</key>
 			<string>\b(?i:error method)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
 			<string>\b(?i:error line)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>			
 		<dict>
 			<key>match</key>
 			<string>\b(?i:error formula)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:error)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>			
 		<dict>
 			<key>match</key>
 			<string>\b(?i:mousedown)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:mouseproc)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>			
 		<dict>
 			<key>match</key>
 			<string>\b(?i:mouse[xy])\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:keycode)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:modifiers)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
 			<string>\b(?i:flddelimit)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>					
 		<dict>
 			<key>match</key>
 			<string>\b(?i:recdelimit)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:ok)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
 			<string>\b(?i:document)\b</string>
 			<key>name</key>
-			<string>constant.language.system-variable.4d</string>
+			<string>support.variable.system.4d</string>
 		</dict>		
+
+		<!-- strings -->
 		
-		<!-- entities -->			
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=["])((\\["ntr\\])|[^"])*(?=["])</string>
+			<key>name</key>
+			<string>string.quoted.double.4d</string>
+		</dict>
+		
+		<!-- variables -->
 		
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)[$][0-9]+\b</string>
 			<key>name</key>
-			<string>entity.parameter.numeric.4d</string>
-		</dict>
+			<string>variable.parameter.numeric.4d</string>
+		</dict>		
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)[$]([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
 			<key>name</key>
-			<string>entity.variable.local.4d</string>
+			<string>variable.local.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)&lt;&gt;([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
 			<key>name</key>
-			<string>entity.variable.interprocess.4d</string>
-		</dict>				
+			<string>variable.interprocess.4d</string>
+		</dict>	
+						
+		<!-- entities -->			
+					
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])*([\p{Letter}])(?=(:C[0-9]+))\b</string>
 			<key>name</key>
-			<string>variable.command.classic.4d</string>
+			<string>entity.classic.function.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)_[oO]_([cC]_)?([\p{Letter} ])+([\p{Letter}])(?=(:C[0-9]+))\b</string>
 			<key>name</key>
-			<string>variable.command.classic.obsolete.4d</string>
+			<string>entity.classic.function.deprecated.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)([cC]_)([\p{Letter}])+(?=(:C[0-9]+))\b</string>
 			<key>name</key>
-			<string>variable.command.classic.declaration.4d</string>
+			<string>entity.classic.type.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\.)\b(?i)(super|this|form|null|4d|ds|cs)(?=(:C[0-9]+)?)\b</string>
 			<key>name</key>
-			<string>variable.command.oop.4d</string>
-		</dict>	
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])+([\p{Letter}])(?=(:K[0-9]+:[0-9]+))\b</string>
-			<key>name</key>
-			<string>constant.classic.4d</string>
-		</dict>			
+			<string>entity.orda.function.4d</string>
+		</dict>
+		
+		<!-- keywords -->
+					
 		<dict>
 			<key>match</key>
 			<string>\b(?i:try)\b</string>
 			<key>name</key>
-			<string>keyword.control.try.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:catch)\b</string>
 			<key>name</key>
-			<string>keyword.control.catch.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:end try)\b</string>
 			<key>name</key>
-			<string>keyword.control.end_catch.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:local)\b</string>
 			<key>name</key>
-			<string>keyword.control.local.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
 			<string>\b(?i:exposed)\b</string>
 			<key>name</key>
-			<string>keyword.control.exposed.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
 			<string>\b(?i:function)\b</string>
 			<key>name</key>
-			<string>keyword.control.function.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:return)\b</string>
 			<key>name</key>
-			<string>keyword.control.return.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
 			<string>\b(?i:break)\b</string>
 			<key>name</key>
-			<string>keyword.control.break.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:continue)\b</string>
 			<key>name</key>
-			<string>keyword.control.continue.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:end use)\b</string>
 			<key>name</key>
-			<string>keyword.control.end_use.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:fin utiliser)\b</string>
 			<key>name</key>
-			<string>keyword.control.fin_utiliser.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:begin sql)\b</string>
 			<key>name</key>
-			<string>keyword.control.begin_sql.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:debut sql)\b</string>
 			<key>name</key>
-			<string>keyword.control.debut_sql.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:end sql)\b</string>
 			<key>name</key>
-			<string>keyword.control.end_sql.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:fin sql)\b</string>
 			<key>name</key>
-			<string>keyword.control.fin_sql.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:case of)\b</string>
 			<key>name</key>
-			<string>keyword.control.case_of.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:au cas ou)\b</string>
 			<key>name</key>
-			<string>keyword.control.au_cas_ou.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:end case)\b</string>
 			<key>name</key>
-			<string>keyword.control.end_case.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:fin de cas)\b</string>
 			<key>name</key>
-			<string>keyword.control.fin_de_cas.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:if)\b</string>
 			<key>name</key>
-			<string>keyword.control.if.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:si)\b</string>
 			<key>name</key>
-			<string>keyword.control.si.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:else)\b</string>
 			<key>name</key>
-			<string>keyword.control.else.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:sinon)\b</string>
 			<key>name</key>
-			<string>keyword.control.sinon.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:fin de si)\b</string>
 			<key>name</key>
-			<string>keyword.control.fin_de_si.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:boucle)\b</string>
 			<key>name</key>
-			<string>keyword.control.boucle.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:fin de boucle)\b</string>
 			<key>name</key>
-			<string>keyword.control.fin_de_boucle.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:repeat)\b</string>
 			<key>name</key>
-			<string>keyword.control.repeat.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:repeter)\b</string>
 			<key>name</key>
-			<string>keyword.control.repeter.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:until)\b</string>
 			<key>name</key>
-			<string>keyword.control.until.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:jusque)\b</string>
 			<key>name</key>
-			<string>keyword.control.jusque.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:while)\b</string>
 			<key>name</key>
-			<string>keyword.control.while.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:tant que)\b</string>
 			<key>name</key>
-			<string>keyword.control.tant_que.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:end while)\b</string>
 			<key>name</key>
-			<string>keyword.control.end_while.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:fin tant que)\b</string>
 			<key>name</key>
-			<string>keyword.control.fin_tant_que.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:pour chaque)\b</string>
 			<key>name</key>
-			<string>keyword.control.pour_chaque.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:end for each)\b</string>
 			<key>name</key>
-			<string>keyword.control.end_for_each.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
+		<!-- must come after end for each -->
 		<dict>
 			<key>match</key>
 			<string>\b(?i:end for)\b</string>
 			<key>name</key>
-			<string>keyword.control.end_for.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:for each)\b</string>
 			<key>name</key>
-			<string>keyword.control.for_each.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
+		<!-- must come after for each -->
 		<dict>
 			<key>match</key>
 			<string>\b(?i:for)\b</string>
 			<key>name</key>
-			<string>keyword.control.for.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:end if)\b</string>
 			<key>name</key>
-			<string>keyword.control.end_if.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:fin de chaque)\b</string>
 			<key>name</key>
-			<string>keyword.control.fin_de_chaque.4d</string>
+			<string>keyword.control.4d</string>
 		</dict>
+		
+		
+		
 		<dict>
 			<key>match</key>
 			<string>\b(?i:class constructor)\b</string>
 			<key>name</key>
-			<string>keyword.control.class_constructor.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:class extends)\b</string>
 			<key>name</key>
-			<string>keyword.control.class_extends.4d</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(?i:property)\b</string>
-			<key>name</key>
-			<string>keyword.control.property.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:alias)\b</string>
 			<key>name</key>
-			<string>keyword.control.alias.4d</string>
+			<string>keyword.other.4d</string>
+		</dict>
+		
+		<!-- storage -->
+		
+		<dict>
+			<key>match</key>
+			<string>\b(?i:property)\b</string>
+			<key>name</key>
+			<string>storage.type.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(?i:var)\b</string>
 			<key>name</key>
-			<string>keyword.control.var.4d</string>
+			<string>storage.type.4d</string>
 		</dict>
+		
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|\$)(?i)(#DECLARE)\b</string>
 			<key>name</key>
-			<string>keyword.control.declare.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>	
+		
+		<!-- one word keyword that can be part of a command should listed at the bottom -->
+		
 		<dict>
 			<key>match</key>
 			<string>\b(?i:use)\b</string>
 			<key>name</key>
-			<string>keyword.control.use.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
 			<string>\b(?i:utiliser)\b</string>
 			<key>name</key>
-			<string>keyword.control.utiliser.4d</string>
-		</dict>		
+			<string>keyword.other.4d</string>
+		</dict>
 	</array>
-	
-	
-	
-	
-	
 	<key>scopeName</key>
 	<string>source.4dm</string>
 	<key>uuid</key>
