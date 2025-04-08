@@ -26,7 +26,7 @@ A TextMate bundle for 4D.
 - [ ] function
 - [ ] property
 - [ ] data type
-- [ ] syatem variables
+- [x] syatem variables
 - [ ] blocks
 - [ ] object literal
 - [ ] collection literal
