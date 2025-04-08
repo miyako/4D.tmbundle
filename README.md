@@ -2,15 +2,15 @@
 A TextMate bundle for 4D.
 
 - [x] Get 4D folder
-- [ ] Dossier 4D
-- [ ] Load 4D View document
-- [ ] Charger document 4D View
-- [ ] Get 4D file
-- [ ] Fichier 4D
-- [ ] RESTART 4D
-- [ ] REDEMARRER 4D
-- [ ] QUIT 4D
-- [ ] QUITTER 4D
+- [x] Dossier 4D
+- [x] Load 4D View document
+- [x] Charger document 4D View
+- [x] Get 4D file
+- [x] Fichier 4D
+- [x] RESTART 4D
+- [x] REDEMARRER 4D
+- [x] QUIT 4D
+- [x] QUITTER 4D
 
 ### tokens
 
