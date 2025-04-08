@@ -27,7 +27,7 @@ A TextMate bundle for 4D.
 |`support.type.orda.4d`|[variable type](https://developer.4d.com/docs/Concepts/variables.html#declaring-variables)|
 |`keyword.control.4d`|`try` `catch` `end try` `return` `break` `continue` `case of` `au cas ou` `end case` `fin de cas` `if` `si` `else` `sinon` `end if` `fin de si` `boucle` `fin de boucle` `repeat` `repeter` `until` `jusque` `while` `tant que` `end while` `fin tant que` `pour chaque` `for each` `end for each` `for` `end for` `fin de chaque`|
 |`keyword.other.4d`|`class constructor` `class extends` `use` `end use` `utiliser` `fin utiliser` `begin sql` `debut sql` `end sql` `fin sql`|
-|`keyword.other.function.4d`||
+|`keyword.other.function.4d`|[function](https://developer.4d.com/docs/Concepts/classes#function)|
 |`keyword.other.alias.4d`|[alias attributes](https://developer.4d.com/docs/ORDA/ordaClasses#alias-attributes-1)|
 |`keyword.other.declare.4d`||
 |`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~\|` `&&` `&` `\|\|` `\|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%`|
