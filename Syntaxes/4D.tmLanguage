@@ -17,12 +17,6 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>name</key>
-			<string>keyword.operator.4d</string>
-			<key>match</key>
-			<string>\+=|\-=|\*=|\/=|\~\||&amp;&amp;|&amp;|\|\|||\||&lt;&lt;|&gt;&gt;|&lt;=|&gt;=|&lt;|&gt;|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|^|%</string>
-		</dict>		
-		<dict>
 		  <key>name</key>
 		  <string>comment.block.4d</string>
 		  <key>begin</key>
@@ -570,6 +564,12 @@
 			<key>name</key>
 			<string>support.variable.classic.4d</string>
 		</dict>	
+		<dict>
+			<key>name</key>
+			<string>keyword.operator.4d</string>
+			<key>match</key>
+			<string>\+=|\-=|\*=|\/=|\~\||&amp;&amp;|&amp;|\|\|||\||&lt;&lt;|&gt;&gt;|&lt;=|&gt;=|&lt;|&gt;|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|^|%</string>
+		</dict>		
 	</array>
 	<key>scopeName</key>
 	<string>source.4dm</string>
