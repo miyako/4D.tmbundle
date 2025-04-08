@@ -38,5 +38,3 @@ A TextMate bundle for 4D.
 ## TODO
 
 - [ ] blocks
-- [ ] object literal
-- [ ] collection literal
