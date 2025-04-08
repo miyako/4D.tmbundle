@@ -323,6 +323,32 @@
 			<key>name</key>
 			<string>constant.date.ddmmyyyy</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>0[xX][0-9a-fA-F]+</string>
+			<key>name</key>
+			<string>constant.numeric.hex</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[0-9]+</string>
+			<key>name</key>
+			<string>constant.numeric.dec</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[0-9]+[.,][0-9]+</string>
+			<key>name</key>
+			<string>constant.numeric.num</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[0-9]+[.,][0-9]+[eE]-?[0-9]+</string>
+			<key>name</key>
+			<string>constant.numeric.exp</string>
+		</dict>
+		
+		
 	</array>
 	<key>scopeName</key>
 	<string>source.4dm</string>
