@@ -3,7 +3,7 @@ A TextMate bundle for 4D.
 
 <img src="https://github.com/user-attachments/assets/c9073aa9-1202-4dbc-a873-fa9a9e870334" width=600 height=auto />
 
-|scope|Description|
+|scope&nbsp|Description|
 |-|-|
 |`source.4dm`|code|
 |`comment.block.4d`||
@@ -13,9 +13,9 @@ A TextMate bundle for 4D.
 |`constant.numeric.exponential.4d`||
 |`constant.numeric.hexadecimal.4d`||
 |`constant.other.time.4d`||
-|`constant.other.date.ymd.4d`||
-|`constant.other.date.dmy.4d`||
+|`constant.other.date.4d`||
 |`constant.character.4d`||
+|`constant.language.system-variable.4d`|OK, Document, Error, Error method, Error line, Error formula, FldDelimit, RecDelimit, MouseDown, MouseX, MouseY, KeyCode, Modifiers, MouseProc, MouseX, MouseY|
 
 
 
