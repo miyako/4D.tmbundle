@@ -16,6 +16,9 @@ A TextMate bundle for 4D.
 |`constant.other.date.4d`||
 |`support.variable.system.4d`|[System Variables](https://developer.4d.com/docs/Concepts/variables#system-variables)|
 |`string.quoted.double.4d`||
+|`variable.parameter.numeric.4d`||
+|`variable.local.4d`||
+|`variable.interprocess.4d`||
 
 
 
