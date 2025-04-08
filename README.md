@@ -20,9 +20,9 @@ A TextMate bundle for 4D.
 |`variable.language.orda.4d`|`ds` `cs` `4D` `this` `form` `null` `super`|
 |`variable.other.local.4d`||
 |`variable.other.interprocess.4d`||
-|`support.function.classic.4d`|classic language|
-|`support.function.classic.deprecated.4d`|classic language with `_O_` prefix|
-|`support.function.orda.4d`|object member function|
+|`entity.name.function.classic.4d`|classic language|
+|`entity.name.function.classic.deprecated.4d`|classic language with `_O_` prefix|
+|`entity.name.function.orda.4d`|object member function|
 |`support.variable.classic.4d`|[System Variables](https://developer.4d.com/docs/Concepts/variables#system-variables)|
 |`support.variable.orda.4d`|object property|
 |`support.type.classic.4d`|classic language with `C_` prefix|
