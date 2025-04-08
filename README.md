@@ -5,7 +5,7 @@ A TextMate bundle for 4D.
 
 |scope|Description|
 |-|-|
-|`source.4dm`|4D language|
+|`source.4dm`|code|
 |`comment.block.4d`||
 |`comment.line.double-slash.4d`||
 |`constant.numeric.4d`||
