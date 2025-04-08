@@ -301,7 +301,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^#(?i:declare)\b</string>
+			<string>(?i)(#DECLARE)\b</string>
 			<key>name</key>
 			<string>keyword.control.declare</string>
 		</dict>
