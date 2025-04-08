@@ -26,7 +26,7 @@ A TextMate bundle for 4D.
 - [x] PROCESS 4D TAGS
 - [x] TRAITER BALISES 4D
 - [x] \_O\_
-- [ ] C\_
+- [x] C\_
 - [x] ds
 - [x] cs
 - [x] 4D
