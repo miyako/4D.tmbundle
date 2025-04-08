@@ -8,6 +8,7 @@ A TextMate bundle for 4D.
 - [ ] function
 - [ ] property
 - [ ] data type
+- [ ] syatem variables
 - [ ] blocks
 
 ### operators
