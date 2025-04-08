@@ -16,7 +16,7 @@ A TextMate bundle for 4D.
 - [x] ENCODER BASE64
 - [x] BASE64 DECODE
 - [x] DECODER BASE64
-- [ ] _O_
+- [ ] \_O\_
 
 ### tokens
 
