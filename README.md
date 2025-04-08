@@ -1,6 +1,21 @@
 # 4D.tmbundle
 A TextMate bundle for 4D.
 
+### constants
+
+- [ ] hex
+- [ ] integer
+- [ ] numeric
+- [ ] exponent
+- [ ] date
+- [ ] time
+- [ ] string
+- [ ] \\r
+- [ ] \\n
+- [ ] \\t
+- [ ] \\"
+- [ ] \\\\
+
 ### keywords
 
 - [x] try, catch, end try
