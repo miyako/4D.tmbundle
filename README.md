@@ -32,3 +32,13 @@ A TextMate bundle for 4D.
 |`keyword.other.declare.4d`|[declaring parameters](https://developer.4d.com/docs/Concepts/parameters#declaring-parameters)|
 |`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~\|` `&&` `&` `\|\|` `\|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%`|
 |`storage.type.4d`|`var` `property`|
+
+## remarks
+
+the following are not assigned any scopes
+
+* unary operator `->`
+* ternary operators `?` `:`
+* parentheses `()` `{}` `[]` `[[]]` 
+* object literal
+* collection literal
