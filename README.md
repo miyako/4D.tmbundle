@@ -1,6 +1,13 @@
 # 4D.tmbundle
 A TextMate bundle for 4D.
 
+### comments
+
+- [x] block
+- [x] line
+
+### commands
+
 - [x] Get 4D folder
 - [x] Dossier 4D
 - [x] Load 4D View document
@@ -11,6 +18,22 @@ A TextMate bundle for 4D.
 - [x] REDEMARRER 4D
 - [x] QUIT 4D
 - [x] QUITTER 4D
+- [x] POP3 New transporter
+- [x] BASE64 ENCODE
+- [x] ENCODER BASE64
+- [x] BASE64 DECODE
+- [x] DECODER BASE64
+- [x] PROCESS 4D TAGS
+- [x] TRAITER BALISES 4D
+- [x] \_O\_
+- [ ] C\_
+- [x] ds
+- [x] cs
+- [x] 4D
+- [x] This
+- [x] Form
+- [x] Self
+- [x] Null
 
 ### tokens
 
