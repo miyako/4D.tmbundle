@@ -237,7 +237,15 @@
 			<string>(?&lt;!\w|\$)_[oO]_([cC]_)?([\p{Letter} ])+([\p{Letter}])(:C[0-9]+)\b</string>
 			<key>name</key>
 			<string>variable.command.classic.obsolete</string>
-		</dict>					
+		</dict>	
+		
+		
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(?i)(super|this|form|null|4d|ds|cs)\b</string>
+			<key>name</key>
+			<string>variable.language</string>
+		</dict>				
 		<dict>
 			<key>match</key>
 			<string>\b(?i:try)\b</string>
