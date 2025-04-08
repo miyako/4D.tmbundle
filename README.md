@@ -1,6 +1,17 @@
 # 4D.tmbundle
 A TextMate bundle for 4D.
 
+- [x] Get 4D folder
+- [ ] Dossier 4D
+- [ ] Load 4D View document
+- [ ] Charger document 4D View
+- [ ] Get 4D file
+- [ ] Fichier 4D
+- [ ] RESTART 4D
+- [ ] REDEMARRER 4D
+- [ ] QUIT 4D
+- [ ] QUITTER 4D
+
 ### tokens
 
 - [x] parameter
