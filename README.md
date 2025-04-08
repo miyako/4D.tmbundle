@@ -27,7 +27,7 @@ A TextMate bundle for 4D.
 |`keyword.control.4d`|`try` `catch` `end try` `return` `break` `continue` `case of` `au cas ou` `end case` `fin de cas` `if` `si` `else` `sinon` `end if` `fin de si` `boucle` `fin de boucle` `repeat` `repeter` `until` `jusque` `while` `tant que` `end while` `fin tant que` `pour chaque` `for each` `end for each` `for` `end for` `fin de chaque`|
 |`keyword.other.4d`|`class constructor` `class extends` `alias` `local` `exposed` `function` `use` `end use` `utiliser` `fin utiliser` `#DECLARE` `begin sql` `debut sql` `end sql` `fin sql`|
 |`storage.type.4d`|`var` `property`|
-|`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~|` `&&` `&` `||` `|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%`|
+|`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~\|` `&&` `&` `\|\|` `\|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%`|
 
 ## TODO
 
