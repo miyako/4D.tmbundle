@@ -49,4 +49,4 @@ A TextMate bundle for 4D.
 - [x] property
 - [x] alias
 - [x] var
-- [ ] #declare
+- [x] #declare
