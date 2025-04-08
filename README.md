@@ -5,6 +5,10 @@ A TextMate bundle for 4D.
 
 ## TODO
 
+- [ ] function
+- [ ] property
+- [ ] data type
+- [ ] syatem variables
 - [ ] blocks
 
 ### operators
@@ -52,8 +56,8 @@ A TextMate bundle for 4D.
 - [x] 4D
 - [x] This
 - [x] Form
-- [x] Self
 - [x] Null
+- [ ] Super
 
 ### tokens
 
