@@ -436,6 +436,12 @@
 			<string>(?&lt;!\w|\$)(?i)QUITTER 4D(:C[0-9]+)?\b</string>
 			<key>name</key>
 			<string>variable.command.classic</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w|\$)(?i)POP3 New transporter(:C[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.command.classic</string>
 		</dict>			
 	</array>
 	<key>scopeName</key>
