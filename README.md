@@ -16,7 +16,10 @@ A TextMate bundle for 4D.
 - [x] ENCODER BASE64
 - [x] BASE64 DECODE
 - [x] DECODER BASE64
-- [ ] \_O\_
+- [x] PROCESS 4D TAGS
+- [x] TRAITER BALISES 4D
+- [x] \_O\_
+- [ ] C\_
 
 ### tokens
 
