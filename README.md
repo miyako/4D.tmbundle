@@ -33,10 +33,7 @@ A TextMate bundle for 4D.
 
 ## TODO
 
-- [ ] function
-- [ ] property
 - [ ] data type
-- [x] syatem variables
 - [ ] blocks
 - [ ] object literal
 - [ ] collection literal
