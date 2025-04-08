@@ -20,6 +20,14 @@ A TextMate bundle for 4D.
 - [x] TRAITER BALISES 4D
 - [x] \_O\_
 - [ ] C\_
+- [ ] ds
+- [ ] cs
+- [ ] 4D
+- [ ] This
+- [ ] Form
+- [ ] Self
+- [ ] Super
+- [ ] Null
 
 ### tokens
 
