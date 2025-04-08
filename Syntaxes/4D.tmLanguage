@@ -305,7 +305,24 @@
 			<key>name</key>
 			<string>keyword.control.declare</string>
 		</dict>
-		
+		<dict>
+			<key>match</key>
+			<string>[?][0-9]{2}:[0-9]{2}:[0-9]{2}[?]</string>
+			<key>name</key>
+			<string>constant.time</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[!][0-9]{2,4}-[0-9]{2}-[0-9]{2}[!]</string>
+			<key>name</key>
+			<string>constant.date.yyyymmdd</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[!][0-9]{2}-[0-9]{2}-[0-9]{2,4}[!]</string>
+			<key>name</key>
+			<string>constant.date.ddmmyyyy</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.4dm</string>
