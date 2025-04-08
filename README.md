@@ -3,6 +3,24 @@ A TextMate bundle for 4D.
 
 <img src="https://github.com/user-attachments/assets/c9073aa9-1202-4dbc-a873-fa9a9e870334" width=600 height=auto />
 
+|scope|Description|
+|-|-|
+|`source.4dm`|4D language|
+|`comment.block.4d`||
+|`comment.line.double-slash.4d`||
+|`constant.numeric.4d`||
+|`constant.numeric.decimal.4d`||
+|`constant.numeric.exponential.4d`||
+|`constant.numeric.hexadecimal.4d`||
+|`constant.other.time.4d`||
+|`constant.other.date.ymd.4d`||
+|`constant.other.date.dmy.4d`||
+|`constant.character.4d`||
+
+
+
+
+
 ## TODO
 
 - [ ] function
