@@ -1,6 +1,42 @@
 # 4D.tmbundle
 A TextMate bundle for 4D.
 
+<img src="https://github.com/user-attachments/assets/98ead510-d1a0-493e-a096-b129fc922838" width=600 height=auto />
+
+## TODO
+
+- [ ] blocks
+
+### operators
+
+- [x] +=
+- [x] -=
+- [x] *=
+- [x] /=
+- [x] ~|
+- [x] &&
+- [x] &
+- [x] ||
+- [x] |
+- [x] <<
+- [x] <=
+- [x] <
+- [x] >>
+- [x] >=
+- [x] >
+- [x] :=
+- [x] ??
+- [x] ?+
+- [x] ?-
+- [x] +
+- [x] =
+- [x] *
+- [x] /
+- [x] =
+- [x] #
+- [x] ^
+- [x] %
+
 ### comments
 
 - [x] block
