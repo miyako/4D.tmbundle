@@ -40,7 +40,7 @@ A TextMate bundle for 4D.
 - [x] parameter
 - [x] local variable
 - [x] interprocess variable
-- [ ] classic command
+- [x] classic command
 - [ ] classic constant
 
 ### constants
