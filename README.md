@@ -30,7 +30,7 @@ A TextMate bundle for 4D.
 |`keyword.other.function.4d`|[function](https://developer.4d.com/docs/Concepts/classes#function)|
 |`keyword.other.alias.4d`|[alias attributes](https://developer.4d.com/docs/ORDA/ordaClasses#alias-attributes-1)|
 |`keyword.other.declare.4d`|[declaring parameters](https://developer.4d.com/docs/Concepts/parameters#declaring-parameters)|
-|`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~\|` `&&` `&` `\|\|` `\|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%`|
+|`keyword.operator.4d`|`+=` `-=` `*=` `/=` `~\|` `&&` `&` `\|\|` `\|` `<<` `<=` `<` `>>` `>=` `>` `:=` `??` `?+` `?-` `+` `=` `*` `/` `=` `#` `^` `%` `?` `:`|
 |`storage.type.4d`|`var` `property`|
 
 ## remarks
@@ -38,7 +38,9 @@ A TextMate bundle for 4D.
 the following are not assigned any scopes
 
 * unary operator `->`
-* ternary operators `?` `:`
+* argument delimiter `;`
+* decimal point `.`
+* comma `,`
 * parentheses `()` `{}` `[]` `[[]]` 
 * object literal
 * collection literal
