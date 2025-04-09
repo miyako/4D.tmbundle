@@ -219,7 +219,7 @@
 		</dict>		
 		<dict>
 			<key>match</key>
-			<string>\b(?i:local )?(?i:exposed )?(?i:function )([\p{Letter}]+ )?([\p{Letter}]+)\b</string>
+			<string>\b(?i)(local |exposed |shared )*(function )([\p{Letter}]+ )?([\p{Letter}]+)\b</string>
 			<key>name</key>
 			<string>keyword.other.function.4d</string>
 		</dict>	
@@ -440,7 +440,7 @@
 		
 		<dict>
 			<key>match</key>
-			<string>\b(?i:class constructor)\b</string>
+			<string>\b(?i)(shared )?(singleton )?(class constructor)\b</string>
 			<key>name</key>
 			<string>keyword.other.4d</string>
 		</dict>
