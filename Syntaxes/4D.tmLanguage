@@ -72,49 +72,49 @@
 		
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$|:)[0-9]+\b</string>
+			<string>(?&lt;!\w|:)[0-9]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)[0-9]+[.,][0-9]+\b</string>
+			<string>(?&lt;!\w)[0-9]+[.,][0-9]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.decimal.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)[0-9]+[.,][0-9]+[eE]-?[0-9]+\b</string>
+			<string>(?&lt;!\w)[0-9]+[.,][0-9]+[eE]-?[0-9]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.exponential.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)0[xX][0-9a-fA-F]+\b</string>
+			<string>(?&lt;!\w)0[xX][0-9a-fA-F]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.hexadecimal.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)[?][0-9]{2}:[0-9]{2}:[0-9]{2}[?]\b</string>
+			<string>(?&lt;!\w)[?][0-9]{2}:[0-9]{2}:[0-9]{2}[?]\b</string>
 			<key>name</key>
 			<string>constant.other.time.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)[!][0-9]{2,4}-[0-9]{2}-[0-9]{2}[!]\b</string>
+			<string>(?&lt;!\w)[!][0-9]{2,4}-[0-9]{2}-[0-9]{2}[!]\b</string>
 			<key>name</key>
 			<string>constant.other.date.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)[!][0-9]{2}-[0-9]{2}-[0-9]{2,4}[!]\b</string>
+			<string>(?&lt;!\w)[!][0-9]{2}-[0-9]{2}-[0-9]{2,4}[!]\b</string>
 			<key>name</key>
 			<string>constant.other.date.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])+([\p{Letter}])(?=(:K[0-9]+:[0-9]+))\b</string>
+			<string>(?&lt;!\w)([\p{Letter}])([\p{Letter} 0-9])+([\p{Letter}])(?=(:K[0-9]+:[0-9]+))\b</string>
 			<key>name</key>
 			<string>constant.language.4d</string>
 		</dict>	
@@ -132,19 +132,19 @@
 		
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)[$][0-9]+\b</string>
+			<string>(?&lt;!\w)[$][0-9]+\b</string>
 			<key>name</key>
 			<string>variable.parameter.numeric.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)[$]([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
+			<string>(?&lt;!\w)[$]([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
 			<key>name</key>
 			<string>variable.other.local.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)&lt;&gt;([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
+			<string>(?&lt;!\w)&lt;&gt;([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
 			<key>name</key>
 			<string>variable.other.interprocess.4d</string>
 		</dict>			
@@ -162,25 +162,25 @@
 		</dict>		
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)([\p{Letter}])([\p{Letter} 0-9])*([\p{Letter}])(?=(:C[0-9]+))\b</string>
+			<string>(?&lt;!\w)([\p{Letter}])([\p{Letter} 0-9])*([\p{Letter}])(?=(:C[0-9]+))\b</string>
 			<key>name</key>
 			<string>entity.name.function.classic.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)_[oO]_([cC]_)?([\p{Letter} ])+([\p{Letter}])(?=(:C[0-9]+))\b</string>
+			<string>(?&lt;!\w)_[oO]_([cC]_)?([\p{Letter} ])+([\p{Letter}])(?=(:C[0-9]+))\b</string>
 			<key>name</key>
 			<string>entity.name.function.classic.deprecated.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)([cC]_)([\p{Letter}])+(?=(:C[0-9]+))\b</string>
+			<string>(?&lt;!\w)([cC]_)([\p{Letter}])+(?=(:C[0-9]+))\b</string>
 			<key>name</key>
 			<string>support.type.classic.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)(super|this|form|null|4d|ds|cs)(?=(:C[0-9]+)?)\b</string>
+			<string>(?&lt;!\w)(?i)(super|this|form|null|4d|ds|cs)(?=(:C[0-9]+)?)\b</string>
 			<key>name</key>
 			<string>variable.language.orda.4d</string>
 		</dict>
@@ -207,7 +207,7 @@
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w|\$)(?i)(#DECLARE)\b</string>
+			<string>(?&lt;!\w)(?i)(#DECLARE)\b</string>
 			<key>name</key>
 			<string>keyword.other.declare.4d</string>
 		</dict>	
@@ -568,7 +568,7 @@
 			<key>name</key>
 			<string>keyword.operator.4d</string>
 			<key>match</key>
-			<string>\+=|\-=|\*=|\/=|\~\||&amp;&amp;|&amp;|\|\|||\||&lt;&lt;|&gt;&gt;|&lt;=|&gt;=|&lt;|&gt;|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|^|%</string>
+			<string>\+=|\-=|\*=|\/=|\~\||&amp;&amp;|&amp;|\|\|||\||&lt;&lt;|&gt;&gt;|&lt;=|&gt;=|&lt;|&gt;|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|\\^|%|\\?|:</string>
 		</dict>		
 	</array>
 	<key>scopeName</key>
