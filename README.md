@@ -1,6 +1,8 @@
 # 4D.tmbundle
 A TextMate bundle for 4D.
 
+<img src="https://github.com/user-attachments/assets/3506f71e-86af-4d88-8930-3042fb53c763" width=400 height=auto />
+
 |scope&nbsp|Description|
 |-|-|
 |`source.4dm`|code|
