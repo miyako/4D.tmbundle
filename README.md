@@ -37,7 +37,7 @@ A TextMate bundle for 4D.
 
 ## remarks
 
-the following are not assigned any scopes
+the following symbols are not assigned any scopes:
 
 * unary operator `->`
 * argument delimiter `;`
@@ -47,4 +47,4 @@ the following are not assigned any scopes
 * object literal
 * collection literal
 
-not using `beginCaptures` for token sequences; simply markup tokens without context
+not using `beginCaptures` for token sequences; simply markup tokens without context.
