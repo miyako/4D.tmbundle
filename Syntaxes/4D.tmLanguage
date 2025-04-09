@@ -440,7 +440,7 @@
 		
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(shared )?(singleton )?(class constructor)\b</string>
+			<string>\b(?i)(singleton |shared )*(class constructor)\b</string>
 			<key>name</key>
 			<string>keyword.other.4d</string>
 		</dict>
