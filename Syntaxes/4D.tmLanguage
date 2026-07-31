@@ -17,6 +17,18 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>match</key>
+			<string>^//\s*%attributes.*$</string>
+			<key>name</key>
+			<string>meta.attributes.4d</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\\\s*$</string>
+			<key>name</key>
+			<string>constant.character.escape.line-continuation.4d</string>
+		</dict>
+		<dict>
 		  <key>name</key>
 		  <string>comment.block.4d</string>
 		  <key>begin</key>
@@ -60,6 +72,37 @@
 		  <key>patterns</key>
 		  <array/>
 		</dict>		
+		<dict>
+		  <key>name</key>
+		  <string>meta.embedded.block.sql.4d</string>
+		  <key>begin</key>
+		  <string>(?i:\b(begin sql|debut sql)\b)</string>
+		  <key>beginCaptures</key>
+		  <dict>
+			<key>0</key>
+			<dict>
+			  <key>name</key>
+			  <string>keyword.other.sql-block.4d</string>
+			</dict>
+		  </dict>
+		  <!-- 4D requires End SQL alone on its line, with nothing else — not even a
+		       trailing comment — so the raw body cannot false-terminate on text that
+		       merely contains "End SQL". -->
+		  <key>end</key>
+		  <string>(?i:^\s*(end sql|fin sql)\s*$)</string>
+		  <key>endCaptures</key>
+		  <dict>
+			<key>0</key>
+			<dict>
+			  <key>name</key>
+			  <string>keyword.other.sql-block.4d</string>
+			</dict>
+		  </dict>
+		  <!-- raw: the body is unparsed SQL, not 4D code -->
+		  <key>patterns</key>
+		  <array/>
+		</dict>
+
 		<!-- constants -->
 		<dict>
 			<key>match</key>
@@ -87,29 +130,49 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w)[?][0-9]{2}:[0-9]{2}:[0-9]{2}[?]\b</string>
+			<string>(?&lt;!\w)[?][0-9]{2,3}:[0-9]{2}:[0-9]{2}[?]\b</string>
 			<key>name</key>
 			<string>constant.other.time.4d</string>
 		</dict>
 		<dict>
+			<!-- Both delimiters must match: '-' (ISO), '/' or '.' (regional system
+			     settings). Year may lead or trail; there is no !! shorthand. -->
 			<key>match</key>
-			<string>(?&lt;!\w)[!][0-9]{2,4}-[0-9]{2}-[0-9]{2}[!]\b</string>
+			<string>(?&lt;!\w)[!]([0-9]{1,4})([-/.])([0-9]{1,4})\2([0-9]{1,4})[!]\b</string>
 			<key>name</key>
 			<string>constant.other.date.4d</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w)[!][0-9]{2}-[0-9]{2}-[0-9]{2,4}[!]\b</string>
-			<key>name</key>
-			<string>constant.other.date.4d</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\w)([\p{Letter}])([\p{Letter} 0-9])+([\p{Letter}])(?=(:K[0-9]+:[0-9]+))\b</string>
+			<string>(?&lt;!\w)([\p{Letter}_0-9])([\p{Letter}_ 0-9])+([\p{Letter}_0-9])(?=(:K[0-9]+:[0-9]+))\b</string>
 			<key>name</key>
 			<string>constant.language.4d</string>
 		</dict>	
 		
+		<!-- char reference: [[ ]] (postfix-only in the grammar; the lexer disambiguates
+		     by position, but a highlighter cannot cheaply do that, so both forms of
+		     bracket doubling get the same punctuation scope here) -->
+		<dict>
+			<key>match</key>
+			<string>\[\[|\]\]</string>
+			<key>name</key>
+			<string>punctuation.definition.char-reference.4d</string>
+		</dict>
+
+		<!-- database table/field references: [Table:1]Field:2 or bare [Table:1] -->
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w)\[([\p{Letter}_0-9])([\p{Letter}_0-9 ])*:[0-9]+\]</string>
+			<key>name</key>
+			<string>support.class.table.4d</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=\])([\p{Letter}_0-9])([\p{Letter}_0-9 ])*(:[0-9]+)?\b</string>
+			<key>name</key>
+			<string>variable.other.property.4d</string>
+		</dict>
+
 		<!-- strings -->
 		
 		<dict>
@@ -127,6 +190,12 @@
 			<key>name</key>
 			<string>variable.parameter.numeric.4d</string>
 		</dict>		
+		<dict>
+			<key>match</key>
+			<string>[$][{]</string>
+			<key>name</key>
+			<string>punctuation.definition.variable.indirection.4d</string>
+		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w)[$]([\p{Letter}_]+)([\p{Letter}_0-9]*)+\b</string>
@@ -153,7 +222,7 @@
 		</dict>		
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w)([\p{Letter}])([\p{Letter} 0-9])*([\p{Letter}])(?=(:C[0-9]+))\b</string>
+			<string>(?&lt;!\w)([\p{Letter}_0-9])([\p{Letter}_ 0-9])*([\p{Letter}_0-9])(?=(:C[0-9]+))\b</string>
 			<key>name</key>
 			<string>entity.name.function.classic.4d</string>
 		</dict>	
@@ -210,7 +279,7 @@
 		</dict>		
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(local |exposed |shared )*(function )([\p{Letter}]+ )?([\p{Letter}]+)\b</string>
+			<string>\b(?i)(shared |session |singleton |exposed |local |server |onHTTPGet )*(function )(get |set |event |query |orderBy )?([\p{Letter}_][\p{Letter}_0-9]* )?([\p{Letter}_][\p{Letter}_0-9]*)?\b</string>
 			<key>name</key>
 			<string>keyword.other.function.4d</string>
 		</dict>	
@@ -234,6 +303,18 @@
 		</dict>	
 		<dict>
 			<key>match</key>
+			<string>\b(?i:throw)\b</string>
+			<key>name</key>
+			<string>keyword.control.4d</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:defer)\b</string>
+			<key>name</key>
+			<string>keyword.control.4d</string>
+		</dict>	
+		<dict>
+			<key>match</key>
 			<string>\b(?i:end use)\b</string>
 			<key>name</key>
 			<string>keyword.other.4d</string>
@@ -241,30 +322,6 @@
 		<dict>
 			<key>match</key>
 			<string>\b(?i:fin utiliser)\b</string>
-			<key>name</key>
-			<string>keyword.other.4d</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(?i:begin sql)\b</string>
-			<key>name</key>
-			<string>keyword.other.4d</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(?i:debut sql)\b</string>
-			<key>name</key>
-			<string>keyword.other.4d</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(?i:end sql)\b</string>
-			<key>name</key>
-			<string>keyword.other.4d</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(?i:fin sql)\b</string>
 			<key>name</key>
 			<string>keyword.other.4d</string>
 		</dict>
@@ -431,7 +488,7 @@
 		
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(singleton |shared )*(class constructor)\b</string>
+			<string>\b(?i)(shared |session |singleton |exposed |local |server |onHTTPGet )*(class constructor)\b</string>
 			<key>name</key>
 			<string>keyword.other.4d</string>
 		</dict>
@@ -557,9 +614,15 @@
 		</dict>	
 		<dict>
 			<key>name</key>
+			<string>keyword.operator.variadic.4d</string>
+			<key>match</key>
+			<string>\.\.\.</string>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>keyword.operator.4d</string>
 			<key>match</key>
-			<string>\+=|\-=|\*=|\/=|\~\||&amp;&amp;|&amp;|\|\|||\||&lt;&lt;|&gt;&gt;|&lt;=|&gt;=|&lt;|&gt;|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|\\^|%|\\?|:</string>
+			<string>:=|\+=|\-=|\*=|\/=|\^\||\|\||&amp;&amp;|&lt;&lt;|&gt;&gt;|&lt;=|&gt;=|\?\?|\?\+|\?\-|-&gt;|\+|\-|\*|\/|=|#|&lt;|&gt;|&amp;|\||%|\\|\^|\?|:</string>
 		</dict>		
 	</array>
 	<key>scopeName</key>
