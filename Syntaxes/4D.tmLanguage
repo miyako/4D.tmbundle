@@ -146,7 +146,7 @@
 			<key>match</key>
 			<string>(?&lt;!\w)([\p{Letter}_0-9])([\p{Letter}_ 0-9])+([\p{Letter}_0-9])(:K[0-9]+:[0-9]+)\b</string>
 			<key>name</key>
-			<string>constant.language.4d</string>
+			<string>support.constant.4d</string>
 		</dict>	
 		
 		<!-- char reference: [[ ]] (postfix-only in the grammar; the lexer disambiguates
@@ -168,7 +168,7 @@
 			<key>match</key>
 			<string>(?&lt;!\w)\[([\p{Letter}_0-9])([\p{Letter}_0-9 ])*(:[0-9]+)?\]([\p{Letter}_0-9])([\p{Letter}_0-9 ])*(:[0-9]+)?</string>
 			<key>name</key>
-			<string>variable.other.field.4d</string>
+			<string>variable.other.property.4d</string>
 		</dict>
 		<!-- bare [Table:1] with no trailing field name — table_reference is a
 		     separate token from field_reference, distinguished only by whether a
@@ -177,7 +177,7 @@
 			<key>match</key>
 			<string>(?&lt;!\w)\[([\p{Letter}_0-9])([\p{Letter}_0-9 ])*:[0-9]+\](?![\p{Letter}_0-9])</string>
 			<key>name</key>
-			<string>support.class.table.4d</string>
+			<string>support.class.4d</string>
 		</dict>
 
 		<!-- strings -->
@@ -219,37 +219,37 @@
 			<key>match</key>
 			<string>(?&lt;=\.)([\p{Letter}])([\p{Letter}0-9])*(?=\()</string>
 			<key>name</key>
-			<string>entity.name.function.orda.4d</string>
+			<string>entity.name.function.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>(?&lt;=\.)([\p{Letter}])([\p{Letter}0-9])*\b</string>
 			<key>name</key>
-			<string>support.variable.orda.4d</string>
+			<string>variable.other.property.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w)([\p{Letter}_0-9])([\p{Letter}_ 0-9])*([\p{Letter}_0-9])(:C[0-9]+)\b</string>
 			<key>name</key>
-			<string>entity.name.function.classic.4d</string>
+			<string>support.function.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w)_[oO]_([cC]_)?([\p{Letter} ])+([\p{Letter}])(:C[0-9]+)\b</string>
 			<key>name</key>
-			<string>entity.name.function.classic.deprecated.4d</string>
+			<string>support.function.deprecated.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w)([cC]_)([\p{Letter}])+(:C[0-9]+)\b</string>
 			<key>name</key>
-			<string>support.type.classic.4d</string>
+			<string>support.type.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w)(?i)(super|this|form|null|4d|ds|cs)(?=(:C[0-9]+)?)\b</string>
 			<key>name</key>
-			<string>variable.language.orda.4d</string>
+			<string>variable.language.4d</string>
 		</dict>
 		
 		<!-- keywords -->
@@ -276,19 +276,40 @@
 			<key>match</key>
 			<string>(?&lt;!\w)(?i)(#DECLARE)\b</string>
 			<key>name</key>
-			<string>keyword.other.declare.4d</string>
+			<string>keyword.control.directive.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
 			<string>\b(?i:alias )([\p{Letter}]+ )([\p{Letter}\.]*)([\p{Letter}]+)\b</string>
 			<key>name</key>
-			<string>keyword.other.alias.4d</string>
+			<string>keyword.other.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(shared |session |singleton |exposed |local |server |onHTTPGet )*(function )(get |set |event |query |orderBy )?([\p{Letter}_][\p{Letter}_0-9]* )?([\p{Letter}_][\p{Letter}_0-9]*)?\b</string>
-			<key>name</key>
-			<string>keyword.other.function.4d</string>
+			<string>\b(?i)((?:shared |session |singleton |exposed |local |server |onHTTPGet )*)(function )(?:(get|set|event|query|orderBy) )?([\p{Letter}_][\p{Letter}_0-9]*)?\b</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.modifier.4d</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.4d</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.4d</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.4d</string>
+				</dict>
+			</dict>
 		</dict>	
 		<dict>
 			<key>match</key>
@@ -495,9 +516,20 @@
 		
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(shared |session |singleton |exposed |local |server |onHTTPGet )*(class constructor)\b</string>
-			<key>name</key>
-			<string>keyword.other.4d</string>
+			<string>\b(?i)((?:shared |session |singleton |exposed |local |server |onHTTPGet )*)(class constructor)\b</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.modifier.4d</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.4d</string>
+				</dict>
+			</dict>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -512,7 +544,7 @@
 			<key>match</key>
 			<string>(?&lt;= : )([\p{Letter}])([\p{Letter}0-9]*)\b</string>
 			<key>name</key>
-			<string>support.type.orda.4d</string>
+			<string>support.type.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
