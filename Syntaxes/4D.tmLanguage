@@ -144,7 +144,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w)([\p{Letter}_0-9])([\p{Letter}_ 0-9])+([\p{Letter}_0-9])(?=(:K[0-9]+:[0-9]+))\b</string>
+			<string>(?&lt;!\w)([\p{Letter}_0-9])([\p{Letter}_ 0-9])+([\p{Letter}_0-9])(:K[0-9]+:[0-9]+)\b</string>
 			<key>name</key>
 			<string>constant.language.4d</string>
 		</dict>	
@@ -159,18 +159,25 @@
 			<string>punctuation.definition.char-reference.4d</string>
 		</dict>
 
-		<!-- database table/field references: [Table:1]Field:2 or bare [Table:1] -->
+		<!-- database table/field references. field_reference is ONE atomic token in
+		     the source grammar ([Table:1]Field:2), so it gets one scope here too —
+		     splitting it into a bracket-match plus a separate lookbehind-match (as an
+		     earlier draft of this file did) causes the bracket and the field name to
+		     render in two different colors, which is not what the grammar intends. -->
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w)\[([\p{Letter}_0-9])([\p{Letter}_0-9 ])*:[0-9]+\]</string>
+			<string>(?&lt;!\w)\[([\p{Letter}_0-9])([\p{Letter}_0-9 ])*(:[0-9]+)?\]([\p{Letter}_0-9])([\p{Letter}_0-9 ])*(:[0-9]+)?</string>
+			<key>name</key>
+			<string>variable.other.field.4d</string>
+		</dict>
+		<!-- bare [Table:1] with no trailing field name — table_reference is a
+		     separate token from field_reference, distinguished only by whether a
+		     name follows the closing bracket. -->
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\w)\[([\p{Letter}_0-9])([\p{Letter}_0-9 ])*:[0-9]+\](?![\p{Letter}_0-9])</string>
 			<key>name</key>
 			<string>support.class.table.4d</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;=\])([\p{Letter}_0-9])([\p{Letter}_0-9 ])*(:[0-9]+)?\b</string>
-			<key>name</key>
-			<string>variable.other.property.4d</string>
 		</dict>
 
 		<!-- strings -->
@@ -210,31 +217,31 @@
 		</dict>			
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\.)([\p{Letter}])([\p{Letter}0-9])*(?=\.|\()\b</string>
+			<string>(?&lt;=\.)([\p{Letter}])([\p{Letter}0-9])*(?=\()</string>
 			<key>name</key>
 			<string>entity.name.function.orda.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\.)([\p{Letter}])([\p{Letter}0-9])*(?=\.|\()\b</string>
+			<string>(?&lt;=\.)([\p{Letter}])([\p{Letter}0-9])*\b</string>
 			<key>name</key>
 			<string>support.variable.orda.4d</string>
 		</dict>		
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w)([\p{Letter}_0-9])([\p{Letter}_ 0-9])*([\p{Letter}_0-9])(?=(:C[0-9]+))\b</string>
+			<string>(?&lt;!\w)([\p{Letter}_0-9])([\p{Letter}_ 0-9])*([\p{Letter}_0-9])(:C[0-9]+)\b</string>
 			<key>name</key>
 			<string>entity.name.function.classic.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w)_[oO]_([cC]_)?([\p{Letter} ])+([\p{Letter}])(?=(:C[0-9]+))\b</string>
+			<string>(?&lt;!\w)_[oO]_([cC]_)?([\p{Letter} ])+([\p{Letter}])(:C[0-9]+)\b</string>
 			<key>name</key>
 			<string>entity.name.function.classic.deprecated.4d</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\w)([cC]_)([\p{Letter}])+(?=(:C[0-9]+))\b</string>
+			<string>(?&lt;!\w)([cC]_)([\p{Letter}])+(:C[0-9]+)\b</string>
 			<key>name</key>
 			<string>support.type.classic.4d</string>
 		</dict>	
