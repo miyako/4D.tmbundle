@@ -7,7 +7,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>4dm</string>
-		<string>4qs</string>
+		<string>c4d</string>
 	</array>
 	<!-- folds -->
 	<key>foldingStartMarker</key>
@@ -42,13 +42,6 @@
 		  <key>patterns</key>
 		  <array/>
 		</dict>
-		
-		
-		
-		
-		
-		
-		
 		<dict>
 		  <key>name</key>
 		  <string>comment.line.double-slash.4d</string>
@@ -66,10 +59,8 @@
 		  <string>\n</string>
 		  <key>patterns</key>
 		  <array/>
-		</dict>	
-		
+		</dict>		
 		<!-- constants -->
-		
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\w|:)[0-9]+\b</string>
